@@ -1,0 +1,14 @@
+select count(id) from dinos;
+
+SELECT name, period FROM dinos WHERE period = 'Jurassic';
+
+SELECT SUM(length) FROM dinos WHERE period = 'Cretaceous';
+
+SELECT species, period FROM dinos WHERE period = 'Jurassic' OR period = 'Cretaceous'   ORDER BY species;
+
+SELECT name, t_order, diet FROM dinos WHERE t_order = 'Saurischia' AND diet = 'Herbivorous';
+
+SELECT id, name, length FROM dinos ORDER BY length;
+UPDATE dinos SET name = 'shortie' WHERE id = 160;
+
+SELECT name FROM dinos ORDER BY name;
